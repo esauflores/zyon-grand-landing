@@ -29,7 +29,7 @@ const ProjectDetailsSection = () => {
                 Zyon Grand is set to be the only integrated development with direct access to Havelock MRT Station, 
                 redefining city living in the heart of District 3. Developed by industry leaders City Developments 
                 Limited (CDL) and Mitsui Fudosan, this prestigious 99-year leasehold mixed-use development introduces 
-                a new icon to Singapore's skyline.
+                a new icon to Singapore&apos;s skyline.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Comprising two soaring 62-storey towers, Zyon Grand offers 706 premium residences — from practical 

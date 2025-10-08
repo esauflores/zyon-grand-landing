@@ -24,7 +24,7 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     fetchContacts();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchContacts = async () => {
     try {
@@ -37,7 +37,7 @@ export default function AdminDashboard() {
       } else {
         setError('Failed to fetch contacts');
       }
-    } catch (error) {
+    } catch (err) {
       setError('Failed to fetch contacts');
     } finally {
       setLoading(false);

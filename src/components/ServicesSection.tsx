@@ -9,10 +9,10 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            We're with you every step of the way
+            We&apos;re with you every step of the way
           </h2>
           <p className="text-xl text-gray-600">
-            From initial inquiries to the final move-in, we're here to support
+            From initial inquiries to the final move-in, we&apos;re here to support
             you every step of the way.
           </p>
         </div>

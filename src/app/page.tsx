@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import AmenitiesSection from "@/components/AmenitiesSection";
 import LocationSection from "@/components/LocationSection";
 import ProjectDetailsSection from "@/components/ProjectDetailsSection";
 import FloorPlansSection from "@/components/FloorPlansSection";
