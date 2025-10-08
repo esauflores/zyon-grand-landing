@@ -28,7 +28,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-12">
+    <nav className="relative z-55 flex items-center justify-between px-6 py-4 lg:px-12">
       {/* Left Navigation */}
       <div className="hidden md:flex items-center">
         {navItems.map((item) => (
@@ -102,30 +102,36 @@ export default function Navbar() {
         <>
           {/* Backdrop */}
           <div
-            className="md:hidden fixed inset-0 bg-black/95 z-30"
+            className="md:hidden fixed inset-0 bg-black/95 z-[9998]"
             onClick={() => setIsMenuOpen(false)}
           />
           {/* Menu Content */}
-          <div className="md:hidden fixed inset-0 z-30 flex flex-col items-center justify-center space-y-8">
+          <div className="md:hidden fixed inset-0 z-[9999] flex flex-col items-center justify-center space-y-8 px-6">
+            {/* Close Button */}
+            <button
+              className="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <Icon icon="mdi:close" className="w-8 h-8" />
+            </button>
+            
+            {/* Navigation Items */}
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className={`text-white text-xl hover:text-gray-300 transition-colors ${
+                className={`text-white text-2xl font-medium hover:text-gray-300 transition-colors text-center ${
                   isActive(item.href) ? "text-white font-semibold" : ""
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
                 {isActive(item.href) && (
-                  <span className="block w-full h-0.5 bg-white mt-1" />
+                  <span className="block w-full h-0.5 bg-white mt-2" />
                 )}
               </a>
             ))}
-            <button className="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-100 transition-colors text-lg font-medium flex items-center gap-2">
-              Enquire Now
-              <Icon icon="mdi:arrow-right" className="w-5 h-5" />
-            </button>
           </div>
         </>
       )}

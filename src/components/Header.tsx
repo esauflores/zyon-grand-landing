@@ -84,7 +84,7 @@ export default function Header() {
 
       {/* Scroll Indicator with Parallax */}
       <div
-        className="absolute bottom-50 left-1/2 z-10 cursor-pointer"
+        className="absolute bottom-30 left-1/2 z-10 cursor-pointer"
         style={{
           transform: `translateX(-50%) translateY(${scrollY * 0.3}px)`,
         }}
