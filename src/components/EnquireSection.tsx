@@ -7,38 +7,25 @@ const EnquireSection = () => {
 
   useEffect(() => {
     const checkScrollPosition = () => {
-      const contentStartElement = document.getElementById('content-start');
-      if (contentStartElement) {
-        const contentStartPosition = contentStartElement.offsetTop;
-        const scrollPosition = window.scrollY;
-        const shouldBeTransparent = scrollPosition < contentStartPosition;
-        
-        // console.log('Scroll check:', {
-        //   contentStartPosition,
-        //   scrollPosition,
-        //   shouldBeTransparent
-        // });
-        
-        setIsPageShort(shouldBeTransparent);
-      }
+      const scrollPosition = window.scrollY;
+      const shouldBeTransparent = scrollPosition < 10;
+      setIsPageShort(shouldBeTransparent);
     };
 
     checkScrollPosition();
-    window.addEventListener('scroll', checkScrollPosition);
-    window.addEventListener('resize', checkScrollPosition);
-    
-    return () => {
-      window.removeEventListener('scroll', checkScrollPosition);
-      window.removeEventListener('resize', checkScrollPosition);
-    };
-  }, []);
+    window.addEventListener("scroll", checkScrollPosition);
 
-  const backgroundClasses = isPageShort 
-    ? 'bg-transparent' 
-    : 'bg-black/30 border-gray-200 shadow-lg';
+    return () => {
+      window.removeEventListener("scroll", checkScrollPosition);
+    };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const backgroundClasses = !isPageShort
+    ? "bg-black/30 border-gray-200 shadow-lg"
+    : "bg-transparent";
 
   return (
-    <div className={`fixed bottom-0 left-0 right-0 z-50 ${backgroundClasses}`}>
+    <div className={`fixed bottom-0 left-0 right-0 z-40 ${backgroundClasses}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 my-2">
         <div className="flex justify-center">
           <button
