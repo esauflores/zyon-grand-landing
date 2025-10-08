@@ -9,7 +9,7 @@ function isAdminAuthenticated(request: NextRequest): boolean {
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     // Check if user is authenticated
@@ -20,7 +20,8 @@ export async function DELETE(
       )
     }
 
-    const contactId = parseInt(params.id)
+    const { id } = await params
+    const contactId = parseInt(id)
 
     if (isNaN(contactId)) {
       return NextResponse.json(

@@ -37,7 +37,7 @@ export default function AdminDashboard() {
       } else {
         setError('Failed to fetch contacts');
       }
-    } catch (err) {
+    } catch {
       setError('Failed to fetch contacts');
     } finally {
       setLoading(false);

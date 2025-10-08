@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ProjectDetailsSection = () => {
   return (
@@ -10,9 +11,11 @@ const ProjectDetailsSection = () => {
           {/* Image Column */}
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <img
+              <Image
                 src="/img/zyon/building-towers.jpg"
                 alt="Zyon Grand Project Details"
+                width={800}
+                height={600}
                 className="w-full h-150 object-cover rounded-lg shadow-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 const ServicesSection = () => {
   return (
@@ -21,9 +22,11 @@ const ServicesSection = () => {
           {/* Column 1 */}
           <div className="rounded-lg overflow-hidden">
             <div className="aspect-video w-full">
-              <img
+              <Image
                 src="/img/zyon/support.jpg"
                 alt="Informed Support"
+                width={600}
+                height={400}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -59,9 +62,11 @@ const ServicesSection = () => {
           {/* Column 2 */}
           <div className="rounded-lg overflow-hidden">
             <div className="aspect-video w-full">
-              <img
+              <Image
                 src="/img/zyon/building-evening.png"
                 alt="Showflat Preview"
+                width={600}
+                height={400}
                 className="w-full h-full object-cover"
               />
             </div>
