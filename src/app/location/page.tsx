@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import LocationSection from "@/components/LocationSection";
+import LocationVideoSection from "@/components/LocationVideoSection";
 import { MapModalProvider, useMapModal } from "@/contexts/MapModalContext";
 import MapModal from "@/components/MapModal";
 import EnquireSection from "@/components/EnquireSection";
@@ -16,6 +17,7 @@ function LocationContent() {
       <main className="pb-24 bg-gray-100">
         <Header />
         <div id="content-start" />
+        <LocationVideoSection />
         <LocationSection />
         <ContactFormSection />
         <DisclaimerSection />

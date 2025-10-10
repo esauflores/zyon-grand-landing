@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import ProjectDetailsSection from "@/components/ProjectDetailsSection";
+import ProjectVideoSection from "@/components/ProjectVideoSection";
 import { MapModalProvider, useMapModal } from "@/contexts/MapModalContext";
 import MapModal from "@/components/MapModal";
 import EnquireSection from "@/components/EnquireSection";
@@ -16,6 +17,7 @@ function ProjectDetailsContent() {
       <main className="pb-24 bg-gray-100">
         <Header />
         <div id="content-start" />
+        {/* <ProjectVideoSection /> */}
         <ProjectDetailsSection />
         <ContactFormSection />
         <DisclaimerSection />

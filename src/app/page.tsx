@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
+import HomeVideoSection from "@/components/HomeVideoSection";
 import LocationSection from "@/components/LocationSection";
 import ProjectDetailsSection from "@/components/ProjectDetailsSection";
 import FloorPlansSection from "@/components/FloorPlansSection";
@@ -19,6 +20,7 @@ function HomeContent() {
       <main className="pb-24 bg-gray-100">
         <Header />
         <div id="content-start" />
+        <HomeVideoSection />
         <LocationSection />
         <ServicesSection />
         <ProjectDetailsSection />
