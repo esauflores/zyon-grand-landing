@@ -96,7 +96,7 @@ const DeveloperSection = () => {
         </div>
 
         {/* Partnership Excellence */}
-        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-12 text-white relative overflow-hidden">
+        {/* <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-12 text-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
           
@@ -112,7 +112,6 @@ const DeveloperSection = () => {
               residential experience that sets new standards for luxury living in Singapore.
             </p>
             
-            {/* Development Companies */}
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
                 <h4 className="text-lg font-semibold mb-4">Development Companies</h4>
@@ -147,7 +146,7 @@ const DeveloperSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
