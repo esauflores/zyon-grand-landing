@@ -49,7 +49,7 @@ const DeveloperSection = () => {
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-gray-400 to-gray-600 mx-auto rounded-full mb-12"></div>
           <p className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed font-light">
-            A collaboration between Singapore's City Developments Limited (CDL) and Japan's Mitsui Fudosan (MFA), 
+            A collaboration between Singapore&apos;s City Developments Limited (CDL) and Japan&apos;s Mitsui Fudosan (MFA), 
             Zyon Grand represents the pinnacle of modern mixed-use living. Developed by CDL-MFA Altair Property Pte Ltd 
             and CDL-MFA Vega Property Pte Ltd, the project seamlessly integrates luxurious residences, serviced apartments, 
             and retail conveniences within one iconic address.
@@ -107,8 +107,8 @@ const DeveloperSection = () => {
             </div>
             <h3 className="text-4xl font-bold mb-6">International Excellence</h3>
             <p className="text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto mb-8">
-              This strategic collaboration combines CDL's deep understanding of Singapore's property market 
-              with Mitsui Fudosan's global expertise in mixed-use developments, creating a truly exceptional 
+              This strategic collaboration combines CDL&apos;s deep understanding of Singapore&apos;s property market 
+              with Mitsui Fudosan&apos;s global expertise in mixed-use developments, creating a truly exceptional 
               residential experience that sets new standards for luxury living in Singapore.
             </p>
             
