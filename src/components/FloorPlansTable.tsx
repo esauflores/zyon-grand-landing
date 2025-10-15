@@ -93,7 +93,7 @@ export default function FloorPlansTable() {
       <section id="floor-plans-table" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-600 mx-auto"></div>
             <p className="mt-4 text-gray-600">Loading floor plans...</p>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function FloorPlansTable() {
                   onClick={() => handlePageChange(page)}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     currentPage === page
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-gray-600 text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
