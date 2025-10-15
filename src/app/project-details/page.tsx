@@ -1,7 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
-import ProjectDetailsSection from "@/components/ProjectDetailsSection";
+import ProjectDetailsVideoSection from "@/components/ProjectDetailsVideoSection";
 import ProjectVideoSection from "@/components/ProjectVideoSection";
 import { MapModalProvider, useMapModal } from "@/contexts/MapModalContext";
 import MapModal from "@/components/MapModal";
@@ -18,7 +18,7 @@ function ProjectDetailsContent() {
         <Header />
         <div id="content-start" />
         {/* <ProjectVideoSection /> */}
-        <ProjectDetailsSection />
+        <ProjectDetailsVideoSection />
         <ContactFormSection />
         <DisclaimerSection />
         <EnquireSection />
