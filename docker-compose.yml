@@ -8,7 +8,6 @@ services:
     ports:
       - "3000:3000"
     environment:
-      NODE_ENV: ${NODE_ENV:-development}
       DATABASE_URL: ${DATABASE_URL:-""}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:-change_me}
     restart: unless-stopped
