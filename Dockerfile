@@ -6,18 +6,6 @@
 FROM node:24-slim AS deps
 WORKDIR /app
 
-# Accept build-time args (deploy system may pass these). Export them as
-# environment variables so `next build` and any code that reads `process.env`
-# during build-time can access them.
-ARG DATABASE_URL
-ARG ADMIN_PASSWORD
-ARG NODE_ENV
-ENV DATABASE_URL=${DATABASE_URL}
-ENV ADMIN_PASSWORD=${ADMIN_PASSWORD}
-ENV NODE_ENV=${NODE_ENV:-production}
-ENV CI=true
-ENV NEXT_TELEMETRY_DISABLED=1
-
 # Install dependencies (including dev deps needed for build)
 COPY package.json package-lock.json* ./
 RUN npm install --legacy-peer-deps --no-audit --progress=false
