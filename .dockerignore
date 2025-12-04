@@ -1,0 +1,16 @@
+# Keep the build context small
+node_modules
+.next
+.env
+.env.*
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+docker-compose.*
+*.log
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+.vscode
+.idea
