@@ -12,8 +12,12 @@ RUN npm install --legacy-peer-deps --no-audit --progress=false
 
 # Copy source and generate Prisma client (if present), then build
 COPY . .
+# Generate Prisma client if schema exists
 RUN if [ -f "prisma/schema.prisma" ]; then npx prisma generate; fi
-RUN npm run build
+# Use the direct Next.js build command inside the container to avoid any
+# project-specific npm script flags (for example `--turbopack`) that may
+# not be available in the container environment used by your CI/hosting.
+RUN npx next build
 
 FROM node:24-slim AS runner
 WORKDIR /app
