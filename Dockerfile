@@ -12,6 +12,8 @@ FROM node:24-slim AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 
+RUN apt-get update -y && apt-get install -y openssl && rm -rf /var/lib/apt/lists/*
+
 COPY --from=deps /app/package.json ./package.json
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=deps /app/.next ./.next
@@ -24,4 +26,4 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["pnpm", "start"]
+CMD ["npm", "start"]
