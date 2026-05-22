@@ -2,6 +2,14 @@
 
 Landing page and content management system for Zyon Grand, a luxury property development. Built with Next.js, Prisma, and Tailwind CSS.
 
+## Screenshots
+
+![Home](screenshots/home.png)
+![Project Details](screenshots/project_details.png)
+![Admin Login](screenshots/admin_login.png)
+![Dashboard](screenshots/dashboard.png)
+![Form](screenshots/form.png)
+
 ## Tech Stack
 
 - **Framework**: Next.js 15 (Turbopack)
